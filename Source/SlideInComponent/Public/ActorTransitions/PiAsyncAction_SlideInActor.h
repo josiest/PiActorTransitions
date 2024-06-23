@@ -3,25 +3,25 @@
 #pragma once
 #include "Components/TimelineComponent.h"
 #include "Kismet/BlueprintAsyncActionBase.h"
-#include "AsyncAction_SlideInActor.generated.h"
+#include "PiAsyncAction_SlideInActor.generated.h"
 
-class USlideInData;
+class UPiSlideInData;
 /**
  * UAsyncAction_SlideInActor
  *  Play an animation that slides an actor in from another position
  */
 UCLASS()
-class PIACTORTRANSITIONS_API UAsyncAction_SlideInActor : public UBlueprintAsyncActionBase {
+class PIACTORTRANSITIONS_API UPiAsyncAction_SlideInActor : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
     UFUNCTION(BlueprintCallable, Category="Actor Transitions", meta=(WorldContext="WorldContext"))
-    static UAsyncAction_SlideInActor *
+    static UPiAsyncAction_SlideInActor *
     SlideInActor(const UObject* WorldContext, AActor* ActorToSlideIn, FVector SlideInOffset,
                  UCurveFloat* SlideInCurve, float PlaybackSpeed);
 
     UFUNCTION(BlueprintCallable, Category="Actor Transitions", meta=(WorldContext="WorldContext"))
-    static UAsyncAction_SlideInActor *
-    SlideInActorFromData(const UObject * WorldContext, AActor * ActorToSlideIn, const USlideInData* SlideInData);
+    static UPiAsyncAction_SlideInActor *
+    SlideInActorFromData(const UObject * WorldContext, AActor * ActorToSlideIn, const UPiSlideInData* SlideInData);
 
     // Async Action interface
     virtual void Activate() override;

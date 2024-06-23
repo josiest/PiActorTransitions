@@ -1,9 +1,9 @@
 ﻿// Copyright 2024 Josie Thompson, MIT License
-#include "Config/ActorTransitionSettings.h"
+#include "Config/PiActorTransitionSettings.h"
 
-const FTopLevelAssetPath UActorTransitionSettings::DefaultCurvePath{TEXT("/PiActorTransitions/DefaultCurveLinearRamp")};
+const FTopLevelAssetPath UPiActorTransitionSettings::DefaultCurvePath{TEXT("/PiActorTransitions/DefaultCurveLinearRamp")};
 
-UActorTransitionSettings::UActorTransitionSettings()
+UPiActorTransitionSettings::UPiActorTransitionSettings()
 {
     using FCurveFloatReference = ConstructorHelpers::FObjectFinder<UCurveFloat>;
     static FCurveFloatReference DefaultCurveLinearRamp{ *DefaultCurvePath.ToString() };
@@ -12,9 +12,9 @@ UActorTransitionSettings::UActorTransitionSettings()
     }
 }
 
-UCurveFloat * UActorTransitionSettings::GetDefaultSlideInCurve()
+UCurveFloat * UPiActorTransitionSettings::GetDefaultSlideInCurve()
 {
-    auto* Settings = GetMutableDefault<UActorTransitionSettings>();
+    auto* Settings = GetMutableDefault<UPiActorTransitionSettings>();
     if (Settings->DefaultCurve.IsNull()) {
         Settings->DefaultCurve = FSoftObjectPath{DefaultCurvePath};
     }

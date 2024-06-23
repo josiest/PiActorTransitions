@@ -2,17 +2,17 @@
 
 #pragma once
 #include "Engine/DataAsset.h"
-#include "SlideInData.generated.h"
+#include "PiSlideInData.generated.h"
 
 /**
  * USlideInData
  *  Data used to configure a Slide-In component
  */
 UCLASS(BlueprintType)
-class PIACTORTRANSITIONS_API USlideInData : public UPrimaryDataAsset {
+class PIACTORTRANSITIONS_API UPiSlideInData : public UPrimaryDataAsset {
     GENERATED_BODY()
 public:
-    USlideInData();
+    UPiSlideInData();
     virtual EDataValidationResult IsDataValid(FDataValidationContext & Context) const override;
     
     /** The relative position the actor will slide in From */

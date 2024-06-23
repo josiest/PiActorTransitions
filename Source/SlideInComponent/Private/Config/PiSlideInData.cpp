@@ -1,18 +1,18 @@
 ﻿// Copyright 2024 Josie Thompson, MIT License
-#include "Config/SlideInData.h"
-#include "Config/ActorTransitionSettings.h"
+#include "Config/PiSlideInData.h"
+#include "Config/PiActorTransitionSettings.h"
 #include "Misc/DataValidation.h"
 
 #define LOCTEXT_NAMESPACE "SlideInData"
 
-USlideInData::USlideInData()
+UPiSlideInData::UPiSlideInData()
 {
     if (!SlideInCurve) {
-        SlideInCurve = UActorTransitionSettings::GetDefaultSlideInCurve();
+        SlideInCurve = UPiActorTransitionSettings::GetDefaultSlideInCurve();
     }
 }
 
-EDataValidationResult USlideInData::IsDataValid(FDataValidationContext & Context) const
+EDataValidationResult UPiSlideInData::IsDataValid(FDataValidationContext & Context) const
 {
     auto IsValidResult = EDataValidationResult::Valid;
     if (!IsValid(SlideInCurve)) {

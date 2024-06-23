@@ -1,17 +1,17 @@
 ﻿// Copyright 2024 Josie Thompson, MIT License
 #pragma once
 #include "Engine/DeveloperSettings.h"
-#include "ActorTransitionSettings.generated.h"
+#include "PiActorTransitionSettings.generated.h"
 
 /**
  * USlideInSettings
  *  Settings for the Slide-in Component plugin
  */
 UCLASS(Config=Game)
-class PIACTORTRANSITIONS_API UActorTransitionSettings : public UDeveloperSettings {
+class PIACTORTRANSITIONS_API UPiActorTransitionSettings : public UDeveloperSettings {
     GENERATED_BODY()
 public:
-    UActorTransitionSettings();
+    UPiActorTransitionSettings();
 
     static UCurveFloat* GetDefaultSlideInCurve();
 
