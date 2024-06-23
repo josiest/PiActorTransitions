@@ -1,9 +1,8 @@
 ﻿// Copyright 2024 Josie Thompson, MIT License
 
 
-#include "AsyncAction_SlideInActor.h"
-
-#include "SlideInData.h"
+#include "ActorTransitions/AsyncAction_SlideInActor.h"
+#include "Config/SlideInData.h"
 
 UAsyncAction_SlideInActor *
 UAsyncAction_SlideInActor::SlideInActor(const UObject * WorldContext, AActor * ActorToSlideIn,

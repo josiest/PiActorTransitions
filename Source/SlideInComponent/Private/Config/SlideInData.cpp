@@ -1,6 +1,6 @@
 ﻿// Copyright 2024 Josie Thompson, MIT License
-#include "SlideInData.h"
-#include "SlideInSettings.h"
+#include "Config/SlideInData.h"
+#include "Config/ActorTransitionSettings.h"
 #include "Misc/DataValidation.h"
 
 #define LOCTEXT_NAMESPACE "SlideInData"
@@ -8,7 +8,7 @@
 USlideInData::USlideInData()
 {
     if (!SlideInCurve) {
-        SlideInCurve = USlideInSettings::GetDefaultSlideInCurve();
+        SlideInCurve = UActorTransitionSettings::GetDefaultSlideInCurve();
     }
 }
 
