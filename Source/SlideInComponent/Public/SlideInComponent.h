@@ -26,7 +26,7 @@ public:
     void SlideIn() const;
 
     /** The configuration data for the slide-in animation */
-    UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="General")
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="General")
     TObjectPtr<USlideInData> SlideInData;
 
 protected:
