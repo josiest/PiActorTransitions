@@ -11,7 +11,7 @@ class USlideInData;
  *  Play an animation that slides an actor in from another position
  */
 UCLASS()
-class SLIDEINCOMPONENT_API UAsyncAction_SlideInActor : public UBlueprintAsyncActionBase {
+class PIACTORTRANSITIONS_API UAsyncAction_SlideInActor : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
     UFUNCTION(BlueprintCallable, Category="Actor Transitions", meta=(WorldContext="WorldContext"))

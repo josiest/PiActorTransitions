@@ -9,7 +9,7 @@
  *  Data used to configure a Slide-In component
  */
 UCLASS(BlueprintType)
-class SLIDEINCOMPONENT_API USlideInData : public UPrimaryDataAsset {
+class PIACTORTRANSITIONS_API USlideInData : public UPrimaryDataAsset {
     GENERATED_BODY()
 public:
     USlideInData();

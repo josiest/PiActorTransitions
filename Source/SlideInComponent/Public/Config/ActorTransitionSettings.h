@@ -8,7 +8,7 @@
  *  Settings for the Slide-in Component plugin
  */
 UCLASS(Config=Game)
-class SLIDEINCOMPONENT_API UActorTransitionSettings : public UDeveloperSettings {
+class PIACTORTRANSITIONS_API UActorTransitionSettings : public UDeveloperSettings {
     GENERATED_BODY()
 public:
     UActorTransitionSettings();

@@ -1,21 +1,21 @@
 ﻿{
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "1.0",
-	"FriendlyName": "SlideInComponent",
-	"Description": "A really simple actor component that performs a slide-in animation",
+	"VersionName": "0.1.0",
+	"FriendlyName": "PiActorTransitions",
+	"Description": "A plugin of simple actor transitions",
 	"Category": "Other",
 	"CreatedBy": "Josie Thompson",
 	"CreatedByURL": "https://josiest.github.io",
 	"DocsURL": "",
 	"MarketplaceURL": "",
 	"CanContainContent": true,
-	"IsBetaVersion": false,
-	"IsExperimentalVersion": false,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": true,
 	"Installed": false,
 	"Modules": [
 		{
-			"Name": "SlideInComponent",
+			"Name": "PiActorTransitions",
 			"Type": "Runtime",
 			"LoadingPhase": "Default"
 		}

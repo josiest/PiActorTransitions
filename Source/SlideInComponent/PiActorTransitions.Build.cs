@@ -2,16 +2,17 @@
 
 using UnrealBuildTool;
 
-public class SlideInComponent : ModuleRules
+public class PiActorTransitions : ModuleRules
 {
-    public SlideInComponent(ReadOnlyTargetRules Target) : base(Target)
+    public PiActorTransitions(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
         PublicDependencyModuleNames.AddRange(new[] {
             "Core",
             "CoreUObject",
             "Engine",
-            "DeveloperSettings"
+            "DeveloperSettings",
+            "Paper2D"
         });
     }
 }

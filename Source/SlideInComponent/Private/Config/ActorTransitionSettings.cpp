@@ -1,7 +1,7 @@
 ﻿// Copyright 2024 Josie Thompson, MIT License
 #include "Config/ActorTransitionSettings.h"
 
-const FTopLevelAssetPath UActorTransitionSettings::DefaultCurvePath{TEXT("/SlideInComponent/DefaultCurveLinearRamp")};
+const FTopLevelAssetPath UActorTransitionSettings::DefaultCurvePath{TEXT("/PiActorTransitions/DefaultCurveLinearRamp")};
 
 UActorTransitionSettings::UActorTransitionSettings()
 {
