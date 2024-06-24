@@ -6,7 +6,7 @@
 
 UPiAsyncAction_SlideInActor *
 UPiAsyncAction_SlideInActor::SlideInActor(const UObject * WorldContext, AActor * ActorToSlideIn,
-                                        FVector SlideInOffset, UCurveFloat * SlideInCurve, float PlaybackSpeed)
+                                          FVector SlideInOffset, UCurveFloat * SlideInCurve, float PlaybackSpeed)
 {
     auto* Action = NewObject<UPiAsyncAction_SlideInActor>();
     Action->ActorToSlide = ActorToSlideIn;
@@ -28,7 +28,7 @@ UPiAsyncAction_SlideInActor::SlideInActor(const UObject * WorldContext, AActor *
 
 UPiAsyncAction_SlideInActor *
 UPiAsyncAction_SlideInActor::SlideInActorFromData(const UObject * WorldContext, AActor * ActorToSlideIn,
-                                                const UPiSlideInData * SlideInData)
+                                                  const UPiSlideInData * SlideInData)
 {
     return SlideInActor(WorldContext, ActorToSlideIn,
                         SlideInData->SlideFromOffset, SlideInData->SlideInCurve,

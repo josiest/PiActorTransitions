@@ -14,14 +14,16 @@ UCLASS()
 class PIACTORTRANSITIONS_API UPiAsyncAction_SlideInActor : public UBlueprintAsyncActionBase {
     GENERATED_BODY()
 public:
-    UFUNCTION(BlueprintCallable, Category="Actor Transitions", meta=(WorldContext="WorldContext"))
+    UFUNCTION(BlueprintCallable, Category="Actor Transitions",
+        meta=(WorldContext="WorldContext", BlueprintInternalUseOnly="true"))
     static UPiAsyncAction_SlideInActor *
     SlideInActor(const UObject* WorldContext, AActor* ActorToSlideIn, FVector SlideInOffset,
                  UCurveFloat* SlideInCurve, float PlaybackSpeed);
 
-    UFUNCTION(BlueprintCallable, Category="Actor Transitions", meta=(WorldContext="WorldContext"))
-    static UPiAsyncAction_SlideInActor *
-    SlideInActorFromData(const UObject * WorldContext, AActor * ActorToSlideIn, const UPiSlideInData* SlideInData);
+    UFUNCTION(BlueprintCallable, Category="Actor Transitions",
+        meta=(WorldContext="WorldContext", BlueprintInternalUseOnly="true"))
+    static UPiAsyncAction_SlideInActor*
+    SlideInActorFromData(const UObject* WorldContext, AActor* ActorToSlideIn, const UPiSlideInData* SlideInData);
 
     // Async Action interface
     virtual void Activate() override;
