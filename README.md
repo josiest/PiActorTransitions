@@ -8,7 +8,9 @@ come with utility data definitions to make it easier to call the same transition
 multiple places. Here's how the transitions are called in blueprint from the example
 above:
 
+|
 ![A screenshot of a blueprint graph that calls SlideIn async actions](Resources/SlideInTransitionExampleBlueprint.png)
+|
 
 ### Future Development
 
