@@ -13,7 +13,9 @@ class PIACTORTRANSITIONS_API UPiSlideInData : public UPrimaryDataAsset {
     GENERATED_BODY()
 public:
     UPiSlideInData();
+#if WITH_EDITOR
     virtual EDataValidationResult IsDataValid(FDataValidationContext & Context) const override;
+#endif
     
     /** The relative position the actor will slide in From */
     UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category="General")

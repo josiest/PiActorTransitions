@@ -12,6 +12,7 @@ UPiSlideInData::UPiSlideInData()
     }
 }
 
+#if WITH_EDITOR
 EDataValidationResult UPiSlideInData::IsDataValid(FDataValidationContext & Context) const
 {
     auto IsValidResult = EDataValidationResult::Valid;
@@ -27,5 +28,6 @@ EDataValidationResult UPiSlideInData::IsDataValid(FDataValidationContext & Conte
     }
     return CombineDataValidationResults(IsValidResult, Super::IsDataValid(Context));
 }
+#endif
 
 #undef LOCTEXT_NAMESPACE

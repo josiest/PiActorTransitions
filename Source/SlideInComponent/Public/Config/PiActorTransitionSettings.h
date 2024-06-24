@@ -3,6 +3,8 @@
 #include "Engine/DeveloperSettings.h"
 #include "PiActorTransitionSettings.generated.h"
 
+class UPiSlideInData;
+
 /**
  * USlideInSettings
  *  Settings for the Slide-in Component plugin
@@ -14,9 +16,14 @@ public:
     UPiActorTransitionSettings();
 
     static UCurveFloat* GetDefaultSlideInCurve();
+    static UPiSlideInData* GetDefaultSlideInData();
 
     static const FTopLevelAssetPath DefaultCurvePath;
+    static const FTopLevelAssetPath DefaultSlideInDataPath;
     
     UPROPERTY(Config, EditDefaultsOnly, BlueprintReadOnly, Category="Data")
     TSoftObjectPtr<UCurveFloat> DefaultCurve;
+
+    UPROPERTY(Config, EditDefaultsOnly, BlueprintReadOnly, Category="Data")
+    TSoftObjectPtr<UPiSlideInData> DefaultSlideInData;
 };
