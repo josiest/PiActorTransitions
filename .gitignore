@@ -4,6 +4,8 @@
 
 # Do not ignore git files in the root of the repo.
 !/.git*
+!/LICENSE
+!/README.md
 
 # Do not ignore current project's `.uplugin`.
 !/*.uplugin
@@ -11,11 +13,7 @@
 # Do not ignore source and config dirs.
 !/Source/**
 !/Config/**
-
-# Plugin should only have relevant assets in Content so don't ignore
-# They're tracked by git-lfs, don't forget to track other
-# files if adding them here.
-!/Content/**
+!/Resources/**
 
 # Allow any files from /RawContent dir.
 # Any file in /RawContent dir will be managed by git lfs.
